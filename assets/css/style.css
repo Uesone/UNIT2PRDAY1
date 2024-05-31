@@ -1,0 +1,262 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.bodyContainerFlex {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  align-items: center;
+}
+
+.flexHeader {
+  background-color: #ffc017;
+  color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.topBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding-bottom: 25px;
+  position: fixed;
+  background-color: #ffc017;
+  z-index: 1000;
+  width: 100%;
+  height: 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 1200px;
+  margin-top: 2%;
+}
+
+.logoContainer img {
+  height: 26px;
+}
+
+.flexNavbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.btNav {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 99em;
+  font-family: "Roboto", sans-serif;
+}
+
+.linkNav {
+  display: flex;
+  gap: 20px;
+}
+
+.linkNav a {
+  color: black;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 90%;
+}
+
+.headerContent {
+  flex-direction: column;
+  margin-top: 20px;
+  width: 80%;
+  max-width: 1200px;
+  margin-top: 40px;
+  width: 80%;
+  max-width: 1200px;
+  margin-bottom: 40px;
+}
+
+.headerContent h1 {
+  font-size: 700%;
+  color: #191919;
+  margin-top: 8%;
+  font-family: "Spectral", sans-serif;
+  font-weight: 430;
+  letter-spacing: -0.08em;
+}
+
+.headerContent h2 {
+  font-size: 175%;
+  color: #191919;
+  margin-top: 3%;
+  margin-bottom: 6%;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: -0.05em;
+}
+
+.headerContent .headerButton {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 2%;
+  width: 213px;
+  font-size: 20px;
+  padding: 8px 20px;
+  border-radius: 99em;
+  position: relative;
+  top: -50px;
+}
+
+.trendingContainer {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+.trendingContainer img {
+  margin-right: 10px;
+}
+
+.h2Articles {
+  font-size: 1em;
+  color: #191919;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: -0.05em;
+}
+
+.flexGridArticles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  margin-top: 20px;
+  border-bottom: 1px solid black;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.article {
+  background-color: #fff;
+  padding: 15px;
+  display: flex;
+  gap: 15px;
+}
+
+.articleNumber {
+  font-size: 2em;
+  font-weight: bold;
+  color: #b3b1b1ba;
+}
+
+.articleContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.author img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.articleContent h4 {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.articleFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.articleFooter .date {
+  flex: 1;
+  text-align: left;
+}
+
+.articleFooter .readTime {
+  flex: 1;
+  text-align: right;
+}
+
+.flexMain {
+  display: flex;
+  width: 80%;
+  max-width: 1200px;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 20px;
+  border-bottom: 1px solid black;
+}
+
+.leftColumn {
+  flex: 2;
+  overflow-y: auto;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.articleImage img {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.simpleArticle h2,
+.simpleArticle h4,
+.simpleArticle p {
+  margin: 0;
+}
+
+.rightColumn {
+  flex: 1;
+  position: sticky;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.rightColumn h2 {
+  margin-bottom: 10px;
+}
+
+.rightColumn button {
+  padding: 10px 20px;
+  border: none;
+  background-color: lightgray;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
