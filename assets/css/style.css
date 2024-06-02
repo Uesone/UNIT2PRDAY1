@@ -151,9 +151,16 @@ body, html {
   gap: 20px;
   padding: 20px;
   margin-top: 20px;
-  border-bottom: 1px solid black;
   width: 80%;
   max-width: 1200px;
+  font-family: "Roboto", sans-serif;
+}
+
+.fullWidthLine {
+  width: 100%;
+  border-bottom: 1px solid #a1a1a13f;
+
+  margin-top: 20px;
 }
 
 .article {
@@ -189,13 +196,15 @@ body, html {
 .articleContent h4 {
   font-weight: bold;
   margin-top: 20px;
+  font-size: 15px;
 }
 
 .articleFooter {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 20px;
+  font-size: 12px;
 }
 
 .articleFooter .date {
@@ -215,8 +224,9 @@ body, html {
   gap: 20px;
   padding: 20px;
   margin-top: 20px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #F2F2F2;
 }
+
 
 .leftColumn {
   flex: 2;
@@ -227,16 +237,37 @@ body, html {
   gap: 20px;
 }
 
-.articleImage img {
-  width: 100%;
-  border: 1px solid #ddd;
+.simpleArticle {
+  background-color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
   border-radius: 5px;
 }
 
-.simpleArticle h2,
-.simpleArticle h4,
-.simpleArticle p {
-  margin: 0;
+.simpleArticle .articleContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.simpleArticle .author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.simpleArticle .articleText {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #333;
+}
+
+.simpleArticle .articleImage img {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
 }
 
 .rightColumn {
@@ -245,19 +276,66 @@ body, html {
   top: 20px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  align-items: center;
+  gap: 20px; 
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+
+  padding-bottom: 30px; 
+  border-bottom: 1px solid #a1a1a145 ; 
 }
 
 .rightColumn h2 {
   margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
 }
 
-.rightColumn button {
+.buttonContainer button {
   padding: 10px 20px;
-  border: none;
-  background-color: lightgray;
-  color: white;
-  border-radius: 5px;
+  border: 1px solid lightgray;
+  background-color: rgb(255, 255, 255);
+  color: rgb(96, 96, 96);
+  border-radius: 0px;
   cursor: pointer;
+  font-family:"Roboto", sans-serif ;
+}
+
+.simpleArticle .articleImage img {
+  width: 200px;
+  height: 134px;
+  object-fit: cover; 
+  border-radius: 5px;
+}
+.articleDateReadSimple {
+  color: #555;
+  font-style: italic;
+ margin-top: 15px;
+}
+
+.simpleArticle h2 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.simpleArticle h4 {
+  font-family: "Roboto", sans-serif;
+}
+
+.simpleArticle{
+  font-family: "Roboto", sans-serif;
+}
+
+.article h2{
+  font-size: 12px;
+}
+
+.footerRightContainer button {
+  color: rgb(96, 96, 96);
+  background-color: white;
+  border: none;
+  font-family: "Roboto", sans-serif;
+
 }
