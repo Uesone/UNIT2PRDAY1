@@ -16,7 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <title>Modern Website</title>
   </head>
   <body>
     <div class="bodyContainerFlex">
@@ -24,7 +24,7 @@
         <div class="topBar">
           <div class="container">
             <div class="logoContainer">
-              <img src="assets/imgs/svg/logo.svg" alt="logo" />
+              <img class="M" src="assets/imgs/svg/logo.svg" alt="logo" />
             </div>
             <div class="flexNavbar">
               <div class="linkNav">
@@ -38,12 +38,21 @@
           </div>
         </div>
         <div class="headerContent">
-          <h1>Stay curious.</h1>
-          <h2>
-            Discover stories, thinking, and expertise from writers <br />
-            on any topic.
-          </h2>
-          <button class="headerButton btn">Start reading</button>
+          <div class="headerLeft">
+            <h1>Stay curious.</h1>
+            <h2>
+              Discover stories, thinking, and expertise from writers <br />
+              on any topic.
+            </h2>
+            <button class="headerButton btn">Start reading</button>
+          </div>
+          <div class="headerRight">
+            <img
+              src="assets/imgs/svg/m.svg"
+              alt="ms"
+              style="padding-top: 15%"
+            />
+          </div>
         </div>
       </header>
       <div class="trendingContainer">
@@ -301,22 +310,6 @@
         </div>
       </div>
     </div>
-    <script>
-      window.addEventListener("scroll", function () {
-        let topBar = document.querySelector(".topBar");
-        let button = document.querySelector(".btNav");
-        let headerContent = document.querySelector(".headerContent");
-        let headerContentHeight = headerContent.offsetHeight;
-        let headerContentTop = headerContent.offsetTop;
-
-        if (window.scrollY > headerContentTop + headerContentHeight) {
-          topBar.classList.add("scrolled");
-          button.classList.add("scrolled");
-        } else {
-          topBar.classList.remove("scrolled");
-          button.classList.remove("scrolled");
-        }
-      });
-    </script>
+    <script src="assets/js/js.js"></script>
   </body>
 </html>
